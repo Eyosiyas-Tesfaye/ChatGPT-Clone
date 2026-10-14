@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'http://localhost:5173'
+    origin: 'https://chat-gpt-clone-ten-lyart.vercel.app'
   })
 )
 app.use(express.json());
