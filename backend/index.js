@@ -24,7 +24,7 @@ async function startServer() {
     const connection = await db.getConnection();
     connection.release();
     console.log("Database connected successfully");
-    let PORT = 3898;
+    let PORT = process.env.PORT || 12740;
     app.listen(PORT, (err) => {
       if (err) {
         throw err;
