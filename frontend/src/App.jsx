@@ -13,7 +13,7 @@ const messagesEndRef = useRef(null);
   async function fetchConversations() {
     try {
       const { data } = await axios.get(
-        "https://chat-gpt-clone-backend-ai5insgc9-eyosi1.vercel.app/",
+        "https://chat-gpt-clone-backend-ebon.vercel.app/api/chat/conversations",
       );
       console.log(data.data);
       setConversations(data.data);
@@ -37,7 +37,7 @@ const messagesEndRef = useRef(null);
     try {
       setIsLoading(true);
       const { data } = await axios.post(
-        "https://chat-gpt-clone-backend-ai5insgc9-eyosi1.vercel.app/",
+        "https://chat-gpt-clone-backend-ebon.vercel.app/",
         {
           question: question.trim(),
         },
