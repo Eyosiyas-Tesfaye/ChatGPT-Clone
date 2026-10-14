@@ -13,7 +13,7 @@ const messagesEndRef = useRef(null);
   async function fetchConversations() {
     try {
       const { data } = await axios.get(
-        "https://chat-gpt-clone-backend-120m.onrender.com/api/chat/conversations",
+        "https://chat-gpt-clone-backend-120m.onrender.com/api/chat/conversation",
       );
       console.log(data.data);
       setConversations(data.data);
