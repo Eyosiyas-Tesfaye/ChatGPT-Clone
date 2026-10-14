@@ -37,7 +37,7 @@ const messagesEndRef = useRef(null);
     try {
       setIsLoading(true);
       const { data } = await axios.post(
-        "https://chat-gpt-clone-backend-120m.onrender.com",
+        "https://chat-gpt-clone-backend-120m.onrender.com./api/chat/conversation",
         {
           question: question.trim(),
         },
