@@ -8,7 +8,7 @@ import cors from 'cors'
 const app = express();
 
 app.use(cors({
-  origin: "https://chat-gpt-clone-ten-lyart.vercel.app",
+  origin: "https://chat-gpt-clone-frontend.onrender.com/",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
