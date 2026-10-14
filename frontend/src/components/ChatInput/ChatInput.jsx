@@ -1,6 +1,6 @@
 import React from 'react'
 import { Plus, ArrowUp, Mic} from "lucide-react";
-import styles from './chatInput.module.css'
+import styles from './ChatInput.module.css'
 import { useState } from 'react';
 
 function ChatInput( { handleSubmit } ) {
