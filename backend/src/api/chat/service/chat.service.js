@@ -77,8 +77,8 @@ export async function createConversationService(question) {
     const historyRows = await getRecentConversationRows(5);
     // insert the new question into the database
     const [result] = await db.execute(
-      'INSERT INTO conversations (content, role) VALUES (?, "user")',
-      [question],
+      'INSERT INTO conversations (content, role) VALUES (?, ?)',
+      [question, 'user'],
     );
 
     const { text, totalTokens } = await generateAssistantAnswer(
