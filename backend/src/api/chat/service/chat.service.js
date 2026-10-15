@@ -87,7 +87,7 @@ export async function createConversationService(question) {
     );
     const [ createAssistantMessageResult ] = await db.execute(
       'INSERT INTO conversations (role, content, token_count) VALUES (?, ?, ?)',
-      ["assistant", text, totalTokens],
+      ['assistant', text, totalTokens],
     );
     const userConversation = await getMessageById(result.insertId);
     const assistantConversation = await getMessageById(createAssistantMessageResult.insertId);
